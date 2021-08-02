@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HEF4060BP
+D 4-stage ripple-carry binary counter/divider and oscillator
+K binary counter
+F https://media.digikey.com/pdf/Data%20Sheets/NXP%20PDFs/HEF4060B.pdf
+$ENDCMP
+#
+#End Doc Library
