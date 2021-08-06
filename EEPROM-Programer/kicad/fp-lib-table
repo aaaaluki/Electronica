@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name personalLib)(type KiCad)(uri /home/luki/Electronica/personalLib.pretty)(options "")(descr ""))
+)

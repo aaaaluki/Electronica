@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "EEPROM Programmer"
 Date "2021-08-02"
-Rev "v1.0"
+Rev "v1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -19,75 +19,32 @@ U 1 1 6106BED5
 P 5950 3700
 F 0 "U3" H 5950 3800 50  0000 C CNN
 F 1 "28C256" H 5950 3700 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm_Socket" H 5950 3700 50  0001 C CNN
+F 2 "Socket:DIP_Socket-28_W11.9_W12.7_W15.24_W17.78_W18.5_3M_228-1277-00-0602J" H 5950 3700 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 5950 3700 50  0001 C CNN
 	1    5950 3700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8000 1900
-NoConn ~ 7800 1900
-NoConn ~ 8400 2400
-NoConn ~ 8400 2300
-NoConn ~ 8400 2700
-NoConn ~ 8400 2900
-NoConn ~ 8400 3000
-NoConn ~ 8400 3100
-NoConn ~ 8400 3200
-NoConn ~ 8400 3300
-NoConn ~ 8400 3400
-NoConn ~ 8400 3500
-NoConn ~ 8400 3600
-NoConn ~ 7400 2300
-$Comp
-L MCU_Module:Arduino_Nano_v3.x A1
-U 1 1 61076E58
-P 7900 2900
-F 0 "A1" H 7600 3850 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" V 7900 2900 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 7900 2900 50  0001 C CIN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 7900 2900 50  0001 C CNN
-	1    7900 2900
-	1    0    0    -1  
-$EndComp
-NoConn ~ 7400 3600
-NoConn ~ 7400 2400
-Wire Wire Line
-	7400 2800 6350 2800
-Wire Wire Line
-	6350 2900 7400 2900
-Wire Wire Line
-	7400 3000 6350 3000
-Wire Wire Line
-	6350 3100 7400 3100
-Wire Wire Line
-	7400 3200 6350 3200
-Wire Wire Line
-	6350 3300 7400 3300
-Wire Wire Line
-	7400 3400 6350 3400
-Wire Wire Line
-	6350 3500 7400 3500
-NoConn ~ 3850 5550
+NoConn ~ 3850 5700
 $Comp
 L 74xx:74HC595 U1
 U 1 1 6106A6E4
-P 3450 3100
-F 0 "U1" H 3250 3650 50  0000 C CNN
-F 1 "74HC595" H 3700 3650 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 3450 3100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 3450 3100 50  0001 C CNN
-	1    3450 3100
+P 3450 3200
+F 0 "U1" H 3450 3100 50  0000 C CNN
+F 1 "74HC595" H 3450 3200 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 3450 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 3450 3200 50  0001 C CNN
+	1    3450 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC595 U2
 U 1 1 6106BA0E
-P 3450 5050
-F 0 "U2" H 3250 5600 50  0000 C CNN
-F 1 "74HC595" H 3700 5600 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 3450 5050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 3450 5050 50  0001 C CNN
-	1    3450 5050
+P 3450 5200
+F 0 "U2" H 3450 5100 50  0000 C CNN
+F 1 "74HC595" H 3450 5200 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 3450 5200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 3450 5200 50  0001 C CNN
+	1    3450 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -105,102 +62,35 @@ Wire Wire Line
 Wire Wire Line
 	3850 3400 5550 3400
 Wire Wire Line
-	3050 4650 3050 4050
+	3050 4150 3850 4150
 Wire Wire Line
-	3050 4050 3850 4050
-Wire Wire Line
-	3850 4750 4250 4750
-Wire Wire Line
-	4250 4750 4250 3600
+	3850 4800 4250 4800
 Wire Wire Line
 	4250 3600 5550 3600
 Wire Wire Line
 	5550 3700 4350 3700
 Wire Wire Line
-	4350 3700 4350 4850
+	4350 4900 3850 4900
 Wire Wire Line
-	4350 4850 3850 4850
-Wire Wire Line
-	3850 4950 4450 4950
-Wire Wire Line
-	4450 4950 4450 3800
+	3850 5000 4450 5000
 Wire Wire Line
 	4450 3800 5550 3800
 Wire Wire Line
-	3850 5050 4550 5050
-Wire Wire Line
-	4550 5050 4550 3900
+	3850 5100 4550 5100
 Wire Wire Line
 	4550 3900 5550 3900
 Wire Wire Line
 	5550 4000 4650 4000
 Wire Wire Line
-	4650 4000 4650 5150
+	4650 5200 3850 5200
 Wire Wire Line
-	4650 5150 3850 5150
-Wire Wire Line
-	3850 5250 4750 5250
-Wire Wire Line
-	4750 5250 4750 4100
+	3850 5300 4750 5300
 Wire Wire Line
 	4750 4100 5550 4100
 Wire Wire Line
 	5550 4200 4850 4200
 Wire Wire Line
-	4850 4200 4850 5350
-Wire Wire Line
-	4850 5350 3850 5350
-Wire Wire Line
-	3850 4050 3850 3600
-Wire Wire Line
-	3850 4650 4150 4650
-Wire Wire Line
-	4150 4650 4150 3500
-Wire Wire Line
-	4150 3500 5550 3500
-Wire Wire Line
-	7400 2500 6650 2500
-Wire Wire Line
-	6650 2500 6650 2050
-Wire Wire Line
-	6650 2050 3050 2050
-Wire Wire Line
-	3050 2050 3050 2700
-Wire Wire Line
-	3050 2900 3050 2800
-Wire Wire Line
-	3050 2800 2500 2800
-Wire Wire Line
-	2500 2800 2500 1950
-Wire Wire Line
-	2500 1950 6750 1950
-Wire Wire Line
-	6750 1950 6750 2600
-Wire Wire Line
-	6750 2600 7400 2600
-Wire Wire Line
-	7400 2700 6850 2700
-Wire Wire Line
-	6850 2700 6850 1850
-Wire Wire Line
-	6850 1850 2400 1850
-Wire Wire Line
-	3050 4850 3050 4750
-Wire Wire Line
-	3050 4750 2500 4750
-Wire Wire Line
-	2500 4750 2500 2800
-Connection ~ 2500 2800
-Wire Wire Line
-	2400 5150 3050 5150
-Wire Wire Line
-	2400 1850 2400 3200
-Wire Wire Line
-	3050 3200 2400 3200
-Connection ~ 2400 3200
-Wire Wire Line
-	2400 3200 2400 5150
-NoConn ~ 3850 2700
+	4850 5400 3850 5400
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 6107D9CC
@@ -235,10 +125,10 @@ F 3 "~" H 1700 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 610950A8
 P 1700 7150
-F 0 "#PWR?" H 1700 6900 50  0001 C CNN
+F 0 "#PWR0101" H 1700 6900 50  0001 C CNN
 F 1 "GND" H 1705 6977 50  0000 C CNN
 F 2 "" H 1700 7150 50  0001 C CNN
 F 3 "" H 1700 7150 50  0001 C CNN
@@ -257,10 +147,10 @@ F 3 "~" H 2200 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 61097355
 P 2200 7000
-F 0 "#PWR?" H 2200 6750 50  0001 C CNN
+F 0 "#PWR0102" H 2200 6750 50  0001 C CNN
 F 1 "GND" H 2205 6827 50  0000 C CNN
 F 2 "" H 2200 7000 50  0001 C CNN
 F 3 "" H 2200 7000 50  0001 C CNN
@@ -279,49 +169,287 @@ F 3 "~" H 2700 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 610990FE
 P 2700 7150
-F 0 "#PWR?" H 2700 6900 50  0001 C CNN
+F 0 "#PWR0103" H 2700 6900 50  0001 C CNN
 F 1 "GND" H 2705 6977 50  0000 C CNN
 F 2 "" H 2700 7150 50  0001 C CNN
 F 3 "" H 2700 7150 50  0001 C CNN
 	1    2700 7150
 	1    0    0    -1  
 $EndComp
-Text GLabel 7950 4100 3    50   Input ~ 0
-GND
-Wire Wire Line
-	7900 3900 7900 4000
-Wire Wire Line
-	7900 4000 7950 4000
-Wire Wire Line
-	8000 4000 8000 3900
-Wire Wire Line
-	7950 4000 7950 4100
-Connection ~ 7950 4000
-Wire Wire Line
-	7950 4000 8000 4000
-Text GLabel 8100 1900 1    50   Input ~ 0
-Vcc
-Text GLabel 5950 2600 1    50   Input ~ 0
-Vcc
-Text GLabel 3450 2500 1    50   Input ~ 0
-Vcc
-Text GLabel 3450 4450 1    50   Input ~ 0
+Text GLabel 5950 2400 1    50   Input ~ 0
 Vcc
 Text GLabel 5950 4800 3    50   Input ~ 0
 GND
-Text GLabel 3450 3800 3    50   Input ~ 0
+Text GLabel 3450 3900 3    50   Input ~ 0
 GND
-Text GLabel 3450 5750 3    50   Input ~ 0
+Text GLabel 3450 5900 3    50   Input ~ 0
 GND
-Text GLabel 3050 3300 0    50   Input ~ 0
+Wire Wire Line
+	3850 3700 3850 4150
+Wire Wire Line
+	3850 3500 5550 3500
+NoConn ~ 3850 5500
+$Comp
+L Device:C C3
+U 1 1 610ADBD4
+P 6100 2500
+F 0 "C3" V 6000 2650 50  0000 C CNN
+F 1 "100n" V 6200 2700 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 6138 2350 50  0001 C CNN
+F 3 "~" H 6100 2500 50  0001 C CNN
+	1    6100 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 2400 5950 2500
+Connection ~ 5950 2500
+Wire Wire Line
+	5950 2500 5950 2600
+Wire Wire Line
+	6250 2500 6350 2500
+Text GLabel 6350 2500 2    50   Input ~ 0
 GND
-Text GLabel 3050 5250 0    50   Input ~ 0
-GND
-Text GLabel 3050 4950 0    50   Input ~ 0
+Text GLabel 3450 2400 1    50   Input ~ 0
 Vcc
-Text GLabel 3050 3000 0    50   Input ~ 0
+$Comp
+L Device:C C1
+U 1 1 610C3959
+P 3600 2500
+F 0 "C1" V 3500 2650 50  0000 C CNN
+F 1 "100n" V 3700 2700 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 3638 2350 50  0001 C CNN
+F 3 "~" H 3600 2500 50  0001 C CNN
+	1    3600 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 2400 3450 2500
+Connection ~ 3450 2500
+Wire Wire Line
+	3450 2500 3450 2600
+Wire Wire Line
+	3750 2500 3850 2500
+Text GLabel 3850 2500 2    50   Input ~ 0
+GND
+Text GLabel 3450 4400 1    50   Input ~ 0
 Vcc
+$Comp
+L Device:C C2
+U 1 1 610C7809
+P 3600 4500
+F 0 "C2" V 3500 4650 50  0000 C CNN
+F 1 "100n" V 3700 4700 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 3638 4350 50  0001 C CNN
+F 3 "~" H 3600 4500 50  0001 C CNN
+	1    3600 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 4400 3450 4500
+Connection ~ 3450 4500
+Wire Wire Line
+	3450 4500 3450 4600
+Wire Wire Line
+	3750 4500 3850 4500
+Text GLabel 3850 4500 2    50   Input ~ 0
+GND
+Wire Wire Line
+	3050 4150 3050 4800
+Wire Wire Line
+	4250 3600 4250 4800
+Wire Wire Line
+	4350 3700 4350 4900
+Wire Wire Line
+	4450 3800 4450 5000
+Wire Wire Line
+	4550 3900 4550 5100
+Wire Wire Line
+	4650 4000 4650 5200
+Wire Wire Line
+	4750 4100 4750 5300
+Wire Wire Line
+	4850 4200 4850 5400
+Wire Wire Line
+	3050 3300 2500 3300
+Wire Wire Line
+	3050 3000 2400 3000
+Wire Wire Line
+	2400 3000 2400 5000
+Wire Wire Line
+	3050 5000 2400 5000
+Wire Wire Line
+	3050 5300 2500 5300
+Wire Wire Line
+	2500 3300 2500 5300
+Wire Wire Line
+	7400 2800 6350 2800
+Wire Wire Line
+	6350 2900 7400 2900
+Wire Wire Line
+	7400 3000 6350 3000
+Wire Wire Line
+	6350 3100 7400 3100
+Wire Wire Line
+	7400 3200 6350 3200
+NoConn ~ 8000 2200
+NoConn ~ 7800 2200
+NoConn ~ 8400 2700
+NoConn ~ 8400 2600
+NoConn ~ 8400 3000
+NoConn ~ 7400 2600
+NoConn ~ 7400 2700
+Text GLabel 7950 4400 3    50   Input ~ 0
+GND
+Wire Wire Line
+	7900 4200 7900 4300
+Wire Wire Line
+	7900 4300 7950 4300
+Wire Wire Line
+	8000 4300 8000 4200
+Wire Wire Line
+	7950 4300 7950 4400
+Connection ~ 7950 4300
+Wire Wire Line
+	7950 4300 8000 4300
+Text GLabel 8100 2200 1    50   Input ~ 0
+Vcc
+Wire Wire Line
+	7300 2150 3050 2150
+Wire Wire Line
+	3050 2150 3050 2800
+Wire Wire Line
+	2500 6150 2500 5300
+Wire Wire Line
+	6650 3700 6650 6150
+Connection ~ 2500 5300
+Wire Wire Line
+	2400 5000 2400 6250
+Wire Wire Line
+	2400 6250 6750 6250
+Wire Wire Line
+	6750 3800 6750 6250
+Connection ~ 2400 5000
+Wire Wire Line
+	7400 3600 7300 3600
+Wire Wire Line
+	7300 3600 7300 2150
+Wire Wire Line
+	5550 4500 5450 4500
+Wire Wire Line
+	5350 4400 5550 4400
+Wire Wire Line
+	7400 3300 6350 3300
+Wire Wire Line
+	6350 3400 7400 3400
+Wire Wire Line
+	7400 3500 6350 3500
+Wire Wire Line
+	5550 5400 8500 5400
+Wire Wire Line
+	5450 5500 8600 5500
+Wire Wire Line
+	5350 5600 8700 5600
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 61076E58
+P 7900 3200
+F 0 "A1" H 7600 4150 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" V 7900 3200 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 7900 3200 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 7900 3200 50  0001 C CNN
+	1    7900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3600 8500 3600
+Wire Wire Line
+	8400 3500 8600 3500
+Wire Wire Line
+	8400 3400 8700 3400
+Wire Wire Line
+	3050 3100 2950 3100
+Wire Wire Line
+	2950 3100 2950 1950
+Wire Wire Line
+	2950 1950 8500 1950
+Wire Wire Line
+	8500 1950 8500 3200
+Wire Wire Line
+	8500 3200 8400 3200
+Wire Wire Line
+	8400 3300 8600 3300
+Wire Wire Line
+	8600 3300 8600 1850
+Wire Wire Line
+	8600 1850 2850 1850
+Wire Wire Line
+	2850 1850 2850 3400
+Wire Wire Line
+	2850 3400 3050 3400
+Wire Wire Line
+	2950 3100 2950 5100
+Wire Wire Line
+	2950 5100 3050 5100
+Connection ~ 2950 3100
+Wire Wire Line
+	3050 5400 2850 5400
+Wire Wire Line
+	2850 5400 2850 3400
+Connection ~ 2850 3400
+$Comp
+L Device:LED D1
+U 1 1 610EC2A3
+P 7200 4550
+F 0 "D1" V 7239 4432 50  0000 R CNN
+F 1 "LED" V 7148 4432 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 7200 4550 50  0001 C CNN
+F 3 "~" H 7200 4550 50  0001 C CNN
+	1    7200 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 610F5C5E
+P 7200 4150
+F 0 "R1" H 7270 4196 50  0000 L CNN
+F 1 "220" H 7270 4105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7130 4150 50  0001 C CNN
+F 3 "~" H 7200 4150 50  0001 C CNN
+	1    7200 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 6150 2500 6150
+Wire Wire Line
+	6750 3800 7400 3800
+Wire Wire Line
+	6650 3700 7400 3700
+Wire Wire Line
+	7400 3900 7200 3900
+Wire Wire Line
+	7200 3900 7200 4000
+Wire Wire Line
+	7200 4300 7200 4400
+Wire Wire Line
+	7200 4700 7200 4800
+Text GLabel 7200 4800 3    50   Input ~ 0
+GND
+Wire Wire Line
+	8500 3600 8500 5400
+Wire Wire Line
+	8600 3500 8600 5500
+Wire Wire Line
+	8700 3400 8700 5600
+Wire Wire Line
+	5550 4600 5550 5400
+Wire Wire Line
+	5450 4500 5450 5500
+Wire Wire Line
+	5350 4400 5350 5600
+NoConn ~ 8400 3900
+NoConn ~ 8400 3800
+NoConn ~ 8400 3700
 $EndSCHEMATC
